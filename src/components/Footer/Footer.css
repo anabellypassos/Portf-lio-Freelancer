@@ -1,0 +1,188 @@
+.main-footer {
+  width: 100%;
+}
+
+/* ESTILO DA SEÇÃO CTA */
+.cta-section {
+  background-color: #fce7f3;
+  padding: 80px 20px;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.cta-text h2 {
+  font-family: 'Sora', serif;
+  font-size: 2.2rem;
+  color: #2d2d2d;
+  max-width: 500px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.cta-text p {
+    font-family: "Roboto", sans-serif;
+
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+  background-color: #e094a4;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-5px);
+  background-color: #d17d8f;
+  box-shadow: 0 10px 20px rgba(224, 148, 164, 0.3);
+}
+
+/* Botão Ver Projetos */
+.btn-projects {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #e094a4;
+  color: #e094a4;
+  padding: 16px 32px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-projects:hover {
+  background-color: #e094a4;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* ESTILO DO RODAPÉ INFERIOR */
+.footer-bottom {
+  background-color: #d17d8f;
+  /* Rosa mais escuro/fechado do footer */
+  padding: 40px 20px;
+  color: white;
+}
+
+.footer-bottom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo-copy {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-family: 'Sora', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.footer-logo-copy p {
+    font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-nav a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footer-nav a:hover {
+  opacity: 1;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a {
+  color: white;
+  transition: transform 0.3s;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.2);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-text h2 {
+    max-width: 100%;
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-logo-copy {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-whatsapp,
+  .btn-projects {
+    justify-content: center;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}

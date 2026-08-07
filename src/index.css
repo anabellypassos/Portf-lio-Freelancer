@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth; /* Faz a rolagem ser suave */
+}
+
+/* Garante que o título da seção não fique escondido atrás da nav-bar fixa */
+section {
+  scroll-margin-top: 80px; 
+}

@@ -1,0 +1,155 @@
+.nav-bar-header {
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: all 0.4s ease;
+}
+
+.nav-bar-header.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.nav-bar-container {
+      background: rgba(255, 255, 255, 0.95);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+/* ... LOGO E LINKS IGUAIS ... */
+.nav-bar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #B87373;
+}
+
+.brand-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #4A3B3B;
+    display: block;
+}
+
+.brand-sub {
+    font-size: 0.6rem;
+    color: #8E7A7A;
+    letter-spacing: 1px;
+}
+
+.nav-bar-desktop {
+    display: flex;
+}
+
+.nav-bar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-bar-links a {
+    text-decoration: none;
+    color: #4A3B3B;
+    font-size: 0.9rem;
+    font-family:'Roboto',sans-serif;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+.nav-bar-links a:hover{
+    border-bottom: 2px solid #B87373;
+
+}
+
+.btn-conversa {
+    background: #E29E9E;
+    color: white !important;
+    padding: 10px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family:'Roboto',sans-serif;
+    font-size: 0.9rem;
+}
+
+/* --- BOTÃO HAMBÚRGUER CORRIGIDO --- */
+.nav-bar-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4A3B3B;
+    z-index: 1100;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-bar-hamburger:hover {
+    color: #B87373;
+}
+
+/* --- MENU MOBILE CORRIGIDO --- */
+.nav-bar-mobile {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-bar-mobile.open {
+    right: 0;
+}
+
+.nav-bar-mobile ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-bar-mobile ul li {
+    margin: 60px 0;
+}
+
+.nav-bar-mobile ul li a {
+  
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #4A3B3B;
+    font-family:'Roboto',sans-serif;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 992px) {
+
+    .nav-bar-desktop,
+    .nav-bar-cta {
+        display: none;
+
+    }
+
+    .nav-bar-hamburger {
+        display: block;
+    }
+}

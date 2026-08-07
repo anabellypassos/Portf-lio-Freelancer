@@ -1,0 +1,115 @@
+.services-section {
+  padding: 100px 5%;
+  background-color: #fdfdfd; /* Fundo quase branco, bem limpo */
+  text-align: center;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.services-header {
+  margin-bottom: 60px;
+}
+
+.star-icon {
+  color: #E29E9E;
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.services-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.services-header p {
+  font-family: 'Poppins', sans-serif;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+/* Grid de Cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas no desktop */
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 45px 30px;
+  border-radius: 25px;
+  border: 1px solid rgba(226, 158, 158, 0.15); /* Borda bem sutil rosa */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover {
+  box-shadow: 0 20px 50px rgba(226, 158, 158, 0.15);
+  border-color: #E29E9E;
+}
+
+/* Ícones circulares */
+.service-icon-wrapper {
+  width: 85px;
+  height: 85px;
+  background-color: #FDF1F1; /* Rosa clarinho de fundo */
+  color: #E29E9E; /* Rosa do ícone */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.service-card:hover .service-icon-wrapper {
+  background-color: #E29E9E;
+  color: #fff;
+}
+
+.service-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media (max-width: 1100px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+  }
+}
+
+@media (max-width: 650px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* 1 coluna no celular */
+  }
+  
+  .services-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .service-card {
+    padding: 35px 25px;
+  }
+}
