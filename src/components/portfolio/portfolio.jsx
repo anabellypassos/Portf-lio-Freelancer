@@ -1,30 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import imgAdvocacia from '../../assets/imag-projects/siteadv1.svg';
+import imgDentista from '../../assets/imag-projects/Clinicadentista.png';
+import imgOffice from '../../assets/imag-projects/office.png';
+import imgClinica from '../../assets/imag-projects/Clinica.png';
 import './portfolio.css';
 
-// 1. Limpei os dados: troquei a função onclick por uma string 'link'
 const projectsData = [
   {
-    image: 'src/assets/imag-projects/siteadv1.svg',
+    image: imgAdvocacia, 
     category: "Site Institucional",
     title: "Advocacia",
     link: "https://site-advocacia2.vercel.app/" 
   },
   {
-    image: 'src/assets/imag-projects/Clinicadentista.png',
+    image: imgDentista,
     category: "E-commerce",
-    title: "Loja de Produtos Naturais",
+    title: "Site Odontológico",
     link: "https://clinica-sorriso-sable.vercel.app/" 
   },
   {
-    image: 'src/assets/imag-projects/office.png',
+    image: imgOffice,
     category: "Sistema Web",
     title: "Organizador de tarefas e editor de textos com IA",
     link: "https://office-magic.vercel.app/"
   },
   {
-    image: 'src/assets/imag-projects/Clinica.png',
+    image: imgClinica,
     category: "Site Institucional",
     title: "Clinica Odontológica",
     link: "https://arco-odontologia.vercel.app/"
