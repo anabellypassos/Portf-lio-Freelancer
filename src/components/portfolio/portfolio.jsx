@@ -5,6 +5,7 @@ import imgAdvocacia from '../../assets/imag-projects/siteadv1.svg';
 import imgDentista from '../../assets/imag-projects/Clinicadentista.png';
 import imgOffice from '../../assets/imag-projects/office.png';
 import imgClinica from '../../assets/imag-projects/Clinica.png';
+import bannerdashboard from '../../assets/imag-projects/bannerdashboard.png';
 import './portfolio.css';
 
 const projectsData = [
@@ -31,6 +32,12 @@ const projectsData = [
     category: "Site Institucional",
     title: "Clinica Odontológica",
     link: "https://arco-odontologia.vercel.app/"
+  },
+   {
+    image: bannerdashboard,
+    category: "Dashboard",
+    title: " Dashboard Corporativo Real-time",
+    link: "https://pulse-admin-whrw.vercel.app/"
   },
 ];
 
