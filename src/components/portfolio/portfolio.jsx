@@ -16,6 +16,12 @@ const projectLandingPage = [
     title: "psicologa",
     link: "landingpage-psicologa-one.vercel.app"
   },
+    {
+    image: landignpageNutricionista,
+    category: "Landing Page Nutricionista",
+    title: "Nutricionista",
+    link: "landing-page-nutricionista-nu.vercel.app"
+  },
 ]
 const projectsData = [
  
