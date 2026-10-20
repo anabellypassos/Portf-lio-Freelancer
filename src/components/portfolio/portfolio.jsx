@@ -6,20 +6,30 @@ import imgDentista from '../../assets/imag-projects/Clinicadentista.png';
 import imgOffice from '../../assets/imag-projects/office.png';
 import imgClinica from '../../assets/imag-projects/Clinica.png';
 import bannerdashboard from '../../assets/imag-projects/bannerdashboard.png';
+import landignpagePsicologa from '../../assets/imag-projects/landignpagePsicologa.png'
 import './portfolio.css';
 
+const projectLandingPage = [
+   {
+    image: landignpagePsicologa,
+    category: "Landing Page Psicológa",
+    title: "psicologa",
+    link: "landingpage-psicologa-one.vercel.app"
+  },
+]
 const projectsData = [
+ 
   {
-    image: imgAdvocacia, 
+    image: imgAdvocacia,
     category: "Site Institucional",
     title: "Advocacia",
-    link: "https://site-advocacia2.vercel.app/" 
+    link: "https://site-advocacia2.vercel.app/"
   },
   {
     image: imgDentista,
     category: "E-commerce",
     title: "Site Odontológico",
-    link: "https://clinica-sorriso-sable.vercel.app/" 
+    link: "https://clinica-sorriso-sable.vercel.app/"
   },
   {
     image: imgOffice,
@@ -33,7 +43,7 @@ const projectsData = [
     title: "Clinica Odontológica",
     link: "https://arco-odontologia.vercel.app/"
   },
-   {
+  {
     image: bannerdashboard,
     category: "Dashboard",
     title: " Dashboard Corporativo Real-time",
@@ -57,8 +67,8 @@ const Portfolio = () => {
   return (
     <section className="portfolio-section" id="portfolio">
       <div className="portfolio-container">
-        
-        <motion.div 
+
+        <motion.div
           className="portfolio-header"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -69,15 +79,12 @@ const Portfolio = () => {
             <h2>Projetos em destaque</h2>
             <p>Alguns trabalhos que geraram resultados incríveis.</p>
           </div>
-          <a href="/todos-projetos" className="all-projects-link">
-            Ver todos os projetos <ArrowRight size={18} />
-          </a>
         </motion.div>
-
+        <h2>Landing pages</h2>
         <div className="projects-grid">
-          {projectsData.map((project, index) => (
-            <motion.div 
-              className="project-card" 
+          {projectLandingPage.map((project, index) => (
+            <motion.div
+              className="project-card"
               key={index}
               variants={cardVariants}
               initial="hidden"
@@ -85,7 +92,35 @@ const Portfolio = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
               whileHover={{ scale: 1.03 }}
-              
+
+              // 3. AQUI ESTÁ A MÁGICA:
+              onClick={() => handleProjectClick(project.link)}
+              style={{ cursor: 'pointer' }} // Garante que mostre a "mãozinha" no mouse
+            >
+              <img src={project.image} alt={project.title} className="project-image" />
+              <div className="project-info">
+                <span className="project-category">{project.category}</span>
+                <h3 className="project-title">{project.title}</h3>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <div>
+
+        </div>
+        <div className="projects-grid">
+          {projectsData.map((project, index) => (
+            <motion.div
+              className="project-card"
+              key={index}
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.15 }}
+              whileHover={{ scale: 1.03 }}
+
               // 3. AQUI ESTÁ A MÁGICA:
               onClick={() => handleProjectClick(project.link)}
               style={{ cursor: 'pointer' }} // Garante que mostre a "mãozinha" no mouse
