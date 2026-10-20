@@ -7,6 +7,7 @@ import imgOffice from '../../assets/imag-projects/office.png';
 import imgClinica from '../../assets/imag-projects/Clinica.png';
 import bannerdashboard from '../../assets/imag-projects/bannerdashboard.png';
 import landignpagePsicologa from '../../assets/imag-projects/landignpagePsicologa.png'
+import landignpageNutricionista from '../../assets/imag-projects/landignpageNutricionista.png'
 import './portfolio.css';
 
 const projectLandingPage = [
@@ -20,7 +21,7 @@ const projectLandingPage = [
     image: landignpageNutricionista,
     category: "Landing Page Nutricionista",
     title: "Nutricionista",
-    link: "landing-page-nutricionista-nu.vercel.app"
+    link: "https://landing-page-nutricionista-nu.vercel.app/"
   },
 ]
 const projectsData = [
