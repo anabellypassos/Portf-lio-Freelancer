@@ -15,7 +15,7 @@ const projectLandingPage = [
     image: landignpagePsicologa,
     category: "Landing Page Psicológa",
     title: "psicologa",
-    link: "landingpage-psicologa-one.vercel.app"
+    link: "https://landingpage-psicologa-one.vercel.app/"
   },
     {
     image: landignpageNutricionista,
@@ -116,6 +116,7 @@ const Portfolio = () => {
         <div>
 
         </div>
+        <br />
         <div className="projects-grid">
           {projectsData.map((project, index) => (
             <motion.div
