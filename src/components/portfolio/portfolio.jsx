@@ -13,14 +13,14 @@ import './portfolio.css';
 const projectLandingPage = [
    {
     image: landignpagePsicologa,
-    category: "Landing Page Psicológa",
-    title: "psicologa",
+    category: "Psicologia",
+    title: "Landing Page Psicóloga",
     link: "https://landingpage-psicologa-one.vercel.app/"
   },
     {
     image: landignpageNutricionista,
-    category: "Landing Page Nutricionista",
-    title: "Nutricionista",
+    category: "Nutricionista",
+    title: "Landing Page Nutricionista",
     link: "https://landing-page-nutricionista-nu.vercel.app/"
   },
 ]
@@ -116,6 +116,13 @@ const Portfolio = () => {
         <div>
 
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <div className="projects-grid">
           {projectsData.map((project, index) => (
